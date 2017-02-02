@@ -1,0 +1,423 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8AC8DAA41E438A4700985EDD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC8DAA31E438A4700985EDD /* main.m */; };
+		8AC8DAA71E438A4700985EDD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC8DAA61E438A4700985EDD /* AppDelegate.m */; };
+		8AC8DAAA1E438A4700985EDD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC8DAA91E438A4700985EDD /* ViewController.m */; };
+		8AC8DAAD1E438A4700985EDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AC8DAAB1E438A4700985EDD /* Main.storyboard */; };
+		8AC8DAAF1E438A4700985EDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AC8DAAE1E438A4700985EDD /* Assets.xcassets */; };
+		8AC8DAB21E438A4700985EDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AC8DAB01E438A4700985EDD /* LaunchScreen.storyboard */; };
+		8AC8DAD31E438AFF00985EDD /* NGRCalendarEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC8DABA1E438AFF00985EDD /* NGRCalendarEvent.m */; };
+		8AC8DAD41E438AFF00985EDD /* NGRComplexDemoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC8DABC1E438AFF00985EDD /* NGRComplexDemoView.m */; };
+		8AC8DAD51E438AFF00985EDD /* NGRComplexDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC8DABE1E438AFF00985EDD /* NGRComplexDemoViewController.m */; };
+		8AC8DAD61E438AFF00985EDD /* NGRDemoDatePickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC8DAC01E438AFF00985EDD /* NGRDemoDatePickerCell.m */; };
+		8AC8DAD71E438AFF00985EDD /* NGRDemoSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC8DAC21E438AFF00985EDD /* NGRDemoSwitchCell.m */; };
+		8AC8DAD81E438AFF00985EDD /* NGRDemoTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC8DAC41E438AFF00985EDD /* NGRDemoTextFieldCell.m */; };
+		8AC8DAD91E438AFF00985EDD /* NGRMediumDemoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC8DAC61E438AFF00985EDD /* NGRMediumDemoView.m */; };
+		8AC8DADA1E438AFF00985EDD /* NGRMediumDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC8DAC81E438AFF00985EDD /* NGRMediumDemoViewController.m */; };
+		8AC8DADB1E438AFF00985EDD /* NGRSimpleDemoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC8DACA1E438AFF00985EDD /* NGRSimpleDemoView.m */; };
+		8AC8DADC1E438AFF00985EDD /* NGRSimpleDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC8DACC1E438AFF00985EDD /* NGRSimpleDemoViewController.m */; };
+		8AC8DADD1E438AFF00985EDD /* NGRTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC8DACE1E438AFF00985EDD /* NGRTextField.m */; };
+		8AC8DADE1E438AFF00985EDD /* NGRUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC8DAD01E438AFF00985EDD /* NGRUser.m */; };
+		8AC8DADF1E438AFF00985EDD /* UIViewController+NGRDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC8DAD21E438AFF00985EDD /* UIViewController+NGRDemo.m */; };
+		8AC8DAE11E438B3300985EDD /* NGRValidation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC8DAE01E438B3300985EDD /* NGRValidation.framework */; };
+		8AC8DAE21E438B3300985EDD /* NGRValidation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC8DAE01E438B3300985EDD /* NGRValidation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8AC8DAE31E438B3300985EDD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8AC8DAE21E438B3300985EDD /* NGRValidation.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8AC8DA9F1E438A4700985EDD /* NGRValidationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NGRValidationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AC8DAA31E438A4700985EDD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8AC8DAA51E438A4700985EDD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8AC8DAA61E438A4700985EDD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8AC8DAA81E438A4700985EDD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8AC8DAA91E438A4700985EDD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8AC8DAAC1E438A4700985EDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8AC8DAAE1E438A4700985EDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8AC8DAB11E438A4700985EDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8AC8DAB31E438A4700985EDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AC8DAB91E438AFF00985EDD /* NGRCalendarEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGRCalendarEvent.h; sourceTree = "<group>"; };
+		8AC8DABA1E438AFF00985EDD /* NGRCalendarEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGRCalendarEvent.m; sourceTree = "<group>"; };
+		8AC8DABB1E438AFF00985EDD /* NGRComplexDemoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGRComplexDemoView.h; sourceTree = "<group>"; };
+		8AC8DABC1E438AFF00985EDD /* NGRComplexDemoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGRComplexDemoView.m; sourceTree = "<group>"; };
+		8AC8DABD1E438AFF00985EDD /* NGRComplexDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGRComplexDemoViewController.h; sourceTree = "<group>"; };
+		8AC8DABE1E438AFF00985EDD /* NGRComplexDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGRComplexDemoViewController.m; sourceTree = "<group>"; };
+		8AC8DABF1E438AFF00985EDD /* NGRDemoDatePickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGRDemoDatePickerCell.h; sourceTree = "<group>"; };
+		8AC8DAC01E438AFF00985EDD /* NGRDemoDatePickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGRDemoDatePickerCell.m; sourceTree = "<group>"; };
+		8AC8DAC11E438AFF00985EDD /* NGRDemoSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGRDemoSwitchCell.h; sourceTree = "<group>"; };
+		8AC8DAC21E438AFF00985EDD /* NGRDemoSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGRDemoSwitchCell.m; sourceTree = "<group>"; };
+		8AC8DAC31E438AFF00985EDD /* NGRDemoTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGRDemoTextFieldCell.h; sourceTree = "<group>"; };
+		8AC8DAC41E438AFF00985EDD /* NGRDemoTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGRDemoTextFieldCell.m; sourceTree = "<group>"; };
+		8AC8DAC51E438AFF00985EDD /* NGRMediumDemoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGRMediumDemoView.h; sourceTree = "<group>"; };
+		8AC8DAC61E438AFF00985EDD /* NGRMediumDemoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGRMediumDemoView.m; sourceTree = "<group>"; };
+		8AC8DAC71E438AFF00985EDD /* NGRMediumDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGRMediumDemoViewController.h; sourceTree = "<group>"; };
+		8AC8DAC81E438AFF00985EDD /* NGRMediumDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGRMediumDemoViewController.m; sourceTree = "<group>"; };
+		8AC8DAC91E438AFF00985EDD /* NGRSimpleDemoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGRSimpleDemoView.h; sourceTree = "<group>"; };
+		8AC8DACA1E438AFF00985EDD /* NGRSimpleDemoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGRSimpleDemoView.m; sourceTree = "<group>"; };
+		8AC8DACB1E438AFF00985EDD /* NGRSimpleDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGRSimpleDemoViewController.h; sourceTree = "<group>"; };
+		8AC8DACC1E438AFF00985EDD /* NGRSimpleDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGRSimpleDemoViewController.m; sourceTree = "<group>"; };
+		8AC8DACD1E438AFF00985EDD /* NGRTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGRTextField.h; sourceTree = "<group>"; };
+		8AC8DACE1E438AFF00985EDD /* NGRTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGRTextField.m; sourceTree = "<group>"; };
+		8AC8DACF1E438AFF00985EDD /* NGRUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGRUser.h; sourceTree = "<group>"; };
+		8AC8DAD01E438AFF00985EDD /* NGRUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGRUser.m; sourceTree = "<group>"; };
+		8AC8DAD11E438AFF00985EDD /* UIViewController+NGRDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NGRDemo.h"; sourceTree = "<group>"; };
+		8AC8DAD21E438AFF00985EDD /* UIViewController+NGRDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NGRDemo.m"; sourceTree = "<group>"; };
+		8AC8DAE01E438B3300985EDD /* NGRValidation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NGRValidation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8AC8DA9C1E438A4700985EDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AC8DAE11E438B3300985EDD /* NGRValidation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8AC8DA961E438A4700985EDD = {
+			isa = PBXGroup;
+			children = (
+				8AC8DAA11E438A4700985EDD /* NGRValidationDemo */,
+				8AC8DAA01E438A4700985EDD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8AC8DAA01E438A4700985EDD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8AC8DA9F1E438A4700985EDD /* NGRValidationDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8AC8DAA11E438A4700985EDD /* NGRValidationDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8AC8DAB91E438AFF00985EDD /* NGRCalendarEvent.h */,
+				8AC8DABA1E438AFF00985EDD /* NGRCalendarEvent.m */,
+				8AC8DABB1E438AFF00985EDD /* NGRComplexDemoView.h */,
+				8AC8DABC1E438AFF00985EDD /* NGRComplexDemoView.m */,
+				8AC8DABD1E438AFF00985EDD /* NGRComplexDemoViewController.h */,
+				8AC8DABE1E438AFF00985EDD /* NGRComplexDemoViewController.m */,
+				8AC8DABF1E438AFF00985EDD /* NGRDemoDatePickerCell.h */,
+				8AC8DAC01E438AFF00985EDD /* NGRDemoDatePickerCell.m */,
+				8AC8DAC11E438AFF00985EDD /* NGRDemoSwitchCell.h */,
+				8AC8DAC21E438AFF00985EDD /* NGRDemoSwitchCell.m */,
+				8AC8DAC31E438AFF00985EDD /* NGRDemoTextFieldCell.h */,
+				8AC8DAC41E438AFF00985EDD /* NGRDemoTextFieldCell.m */,
+				8AC8DAC51E438AFF00985EDD /* NGRMediumDemoView.h */,
+				8AC8DAC61E438AFF00985EDD /* NGRMediumDemoView.m */,
+				8AC8DAC71E438AFF00985EDD /* NGRMediumDemoViewController.h */,
+				8AC8DAC81E438AFF00985EDD /* NGRMediumDemoViewController.m */,
+				8AC8DAC91E438AFF00985EDD /* NGRSimpleDemoView.h */,
+				8AC8DACA1E438AFF00985EDD /* NGRSimpleDemoView.m */,
+				8AC8DACB1E438AFF00985EDD /* NGRSimpleDemoViewController.h */,
+				8AC8DACC1E438AFF00985EDD /* NGRSimpleDemoViewController.m */,
+				8AC8DACD1E438AFF00985EDD /* NGRTextField.h */,
+				8AC8DACE1E438AFF00985EDD /* NGRTextField.m */,
+				8AC8DACF1E438AFF00985EDD /* NGRUser.h */,
+				8AC8DAD01E438AFF00985EDD /* NGRUser.m */,
+				8AC8DAD11E438AFF00985EDD /* UIViewController+NGRDemo.h */,
+				8AC8DAD21E438AFF00985EDD /* UIViewController+NGRDemo.m */,
+				8AC8DAA51E438A4700985EDD /* AppDelegate.h */,
+				8AC8DAA61E438A4700985EDD /* AppDelegate.m */,
+				8AC8DAA81E438A4700985EDD /* ViewController.h */,
+				8AC8DAA91E438A4700985EDD /* ViewController.m */,
+				8AC8DAAB1E438A4700985EDD /* Main.storyboard */,
+				8AC8DAAE1E438A4700985EDD /* Assets.xcassets */,
+				8AC8DAB01E438A4700985EDD /* LaunchScreen.storyboard */,
+				8AC8DAB31E438A4700985EDD /* Info.plist */,
+				8AC8DAE41E438BE300985EDD /* Frameworks */,
+				8AC8DAA21E438A4700985EDD /* Supporting Files */,
+			);
+			path = NGRValidationDemo;
+			sourceTree = "<group>";
+		};
+		8AC8DAA21E438A4700985EDD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8AC8DAA31E438A4700985EDD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8AC8DAE41E438BE300985EDD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8AC8DAE01E438B3300985EDD /* NGRValidation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8AC8DA9E1E438A4700985EDD /* NGRValidationDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AC8DAB61E438A4700985EDD /* Build configuration list for PBXNativeTarget "NGRValidationDemo" */;
+			buildPhases = (
+				8AC8DA9B1E438A4700985EDD /* Sources */,
+				8AC8DA9C1E438A4700985EDD /* Frameworks */,
+				8AC8DA9D1E438A4700985EDD /* Resources */,
+				8AC8DAE31E438B3300985EDD /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NGRValidationDemo;
+			productName = NGRValidationDemo;
+			productReference = 8AC8DA9F1E438A4700985EDD /* NGRValidationDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8AC8DA971E438A4700985EDD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = dimon;
+				TargetAttributes = {
+					8AC8DA9E1E438A4700985EDD = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = N7KJYZ955Q;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8AC8DA9A1E438A4700985EDD /* Build configuration list for PBXProject "NGRValidationDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8AC8DA961E438A4700985EDD;
+			productRefGroup = 8AC8DAA01E438A4700985EDD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8AC8DA9E1E438A4700985EDD /* NGRValidationDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8AC8DA9D1E438A4700985EDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AC8DAB21E438A4700985EDD /* LaunchScreen.storyboard in Resources */,
+				8AC8DAAF1E438A4700985EDD /* Assets.xcassets in Resources */,
+				8AC8DAAD1E438A4700985EDD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8AC8DA9B1E438A4700985EDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AC8DAD31E438AFF00985EDD /* NGRCalendarEvent.m in Sources */,
+				8AC8DAD41E438AFF00985EDD /* NGRComplexDemoView.m in Sources */,
+				8AC8DAAA1E438A4700985EDD /* ViewController.m in Sources */,
+				8AC8DADD1E438AFF00985EDD /* NGRTextField.m in Sources */,
+				8AC8DAD61E438AFF00985EDD /* NGRDemoDatePickerCell.m in Sources */,
+				8AC8DADA1E438AFF00985EDD /* NGRMediumDemoViewController.m in Sources */,
+				8AC8DAD91E438AFF00985EDD /* NGRMediumDemoView.m in Sources */,
+				8AC8DADC1E438AFF00985EDD /* NGRSimpleDemoViewController.m in Sources */,
+				8AC8DAD71E438AFF00985EDD /* NGRDemoSwitchCell.m in Sources */,
+				8AC8DADF1E438AFF00985EDD /* UIViewController+NGRDemo.m in Sources */,
+				8AC8DAA71E438A4700985EDD /* AppDelegate.m in Sources */,
+				8AC8DAD51E438AFF00985EDD /* NGRComplexDemoViewController.m in Sources */,
+				8AC8DADE1E438AFF00985EDD /* NGRUser.m in Sources */,
+				8AC8DAA41E438A4700985EDD /* main.m in Sources */,
+				8AC8DAD81E438AFF00985EDD /* NGRDemoTextFieldCell.m in Sources */,
+				8AC8DADB1E438AFF00985EDD /* NGRSimpleDemoView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8AC8DAAB1E438A4700985EDD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8AC8DAAC1E438A4700985EDD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8AC8DAB01E438A4700985EDD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8AC8DAB11E438A4700985EDD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8AC8DAB41E438A4700985EDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8AC8DAB51E438A4700985EDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8AC8DAB71E438A4700985EDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N7KJYZ955Q;
+				INFOPLIST_FILE = NGRValidationDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.sdkdimon.NGRValidationDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8AC8DAB81E438A4700985EDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N7KJYZ955Q;
+				INFOPLIST_FILE = NGRValidationDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.sdkdimon.NGRValidationDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8AC8DA9A1E438A4700985EDD /* Build configuration list for PBXProject "NGRValidationDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AC8DAB41E438A4700985EDD /* Debug */,
+				8AC8DAB51E438A4700985EDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AC8DAB61E438A4700985EDD /* Build configuration list for PBXNativeTarget "NGRValidationDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AC8DAB71E438A4700985EDD /* Debug */,
+				8AC8DAB81E438A4700985EDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8AC8DA971E438A4700985EDD /* Project object */;
+}

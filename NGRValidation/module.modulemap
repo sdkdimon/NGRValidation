@@ -1,0 +1,5 @@
+framework module NGRValidation {
+    umbrella header "NGRValidation.h"
+    export *
+    module * {export *}
+}
