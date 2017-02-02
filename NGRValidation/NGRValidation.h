@@ -6,8 +6,6 @@
 //
 //
 
-#import <UIKit/UIKit.h>
-
 //! Project version number for NGRValidation.
 FOUNDATION_EXPORT double NGRValidationVersionNumber;
 
