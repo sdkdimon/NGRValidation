@@ -6,6 +6,8 @@
 //
 //
 
+#import <Foundation/Foundation.h>
+
 //! Project version number for NGRValidation.
 FOUNDATION_EXPORT double NGRValidationVersionNumber;
 
