@@ -130,7 +130,7 @@
 		8AC8D9B91E43666C00985EDD /* NGRValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGRValidator.m; sourceTree = "<group>"; };
 		8AC8D9BA1E43666C00985EDD /* NGRValidatorDeprecated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGRValidatorDeprecated.h; sourceTree = "<group>"; };
 		8AC8D9BB1E43666C00985EDD /* NGRValidatorShorthand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGRValidatorShorthand.h; sourceTree = "<group>"; };
-		8AC8DA491E43887600985EDD /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		8AC8DA491E43887600985EDD /* modulemap.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = modulemap.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,7 +250,7 @@
 				8AC8D9BB1E43666C00985EDD /* NGRValidatorShorthand.h */,
 				8AC8D98D1E43663F00985EDD /* NGRValidation.h */,
 				8AC8D98E1E43663F00985EDD /* Info.plist */,
-				8AC8DA491E43887600985EDD /* module.modulemap */,
+				8AC8DA491E43887600985EDD /* modulemap.modulemap */,
 			);
 			path = NGRValidation;
 			sourceTree = "<group>";
@@ -689,7 +689,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = $SRCROOT/$PROJECT_NAME/module.modulemap;
+				MODULEMAP_FILE = $SRCROOT/$PROJECT_NAME/modulemap.modulemap;
 				PRODUCT_BUNDLE_IDENTIFIER = org.sdkdimon.NGRValidation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -717,7 +717,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = $SRCROOT/$PROJECT_NAME/module.modulemap;
+				MODULEMAP_FILE = $SRCROOT/$PROJECT_NAME/modulemap.modulemap;
 				PRODUCT_BUNDLE_IDENTIFIER = org.sdkdimon.NGRValidation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -754,6 +754,7 @@
 				8AC8D9921E43663F00985EDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
