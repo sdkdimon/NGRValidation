@@ -19,6 +19,6 @@ Pod::Spec.new do |s|
   s.requires_arc  = true
 
   s.source_files  = 'NGRValidation/**/*.{h,m}'
-  s.module_map = 'NGRValidation/module.modulemap'
+  s.module_map = 'NGRValidation/modulemap.modulemap'
   
 end
