@@ -45,7 +45,7 @@
 /**
  *  Validates that the NSString contains only decimal signs.
  */
-@property (copy, nonatomic, readonly) NGRPropertyValidator *(^decimal)();
+@property (copy, nonatomic, readonly) NGRPropertyValidator *(^decimal)(void);
 
 #pragma mark - Messaging
 

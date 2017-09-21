@@ -78,12 +78,12 @@
 
 + (NSError *)validateValue:(NSObject *)value named:(NSString *)name usingRules:(void (^)(NGRPropertyValidator *validator))rules NGR_DEPRECATED_USE_INSTEAD("validateValue:named:rules");
 
-+ (BOOL)validateModel:(NSObject *)model error:(NSError **)error usingRules:(NSArray *(^)())rules NGR_DEPRECATED_USE_INSTEAD("validateModel:error:delegate:rules:");
++ (BOOL)validateModel:(NSObject *)model error:(NSError **)error usingRules:(NSArray *(^)(void))rules NGR_DEPRECATED_USE_INSTEAD("validateModel:error:delegate:rules:");
 
-+ (BOOL)validateModel:(NSObject *)model error:(NSError **)error scenario:(NSString *)scenario usingRules:(NSArray *(^)())rules NGR_DEPRECATED_USE_INSTEAD("validateModel:error:scenario:delegate:rules:");
++ (BOOL)validateModel:(NSObject *)model error:(NSError **)error scenario:(NSString *)scenario usingRules:(NSArray *(^)(void))rules NGR_DEPRECATED_USE_INSTEAD("validateModel:error:scenario:delegate:rules:");
 
-+ (NSArray *)validateModel:(NSObject *)model usingRules:(NSArray *(^)())rules NGR_DEPRECATED_USE_INSTEAD("validateModel:delegate:rules:");
++ (NSArray *)validateModel:(NSObject *)model usingRules:(NSArray *(^)(void))rules NGR_DEPRECATED_USE_INSTEAD("validateModel:delegate:rules:");
 
-+ (NSArray *)validateModel:(NSObject *)model scenario:(NSString *)scenario usingRules:(NSArray *(^)())rules NGR_DEPRECATED_USE_INSTEAD("validateModel:scenario:delegate:rules:");
++ (NSArray *)validateModel:(NSObject *)model scenario:(NSString *)scenario usingRules:(NSArray *(^)(void))rules NGR_DEPRECATED_USE_INSTEAD("validateModel:scenario:delegate:rules:");
 
 @end

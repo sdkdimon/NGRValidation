@@ -80,7 +80,7 @@ typedef NGRMsgKey *(^NGRStringValidationBlock)(NSString *string);
     };
 }
 
-- (NGRPropertyValidator *(^)())decimal {
+- (NGRPropertyValidator *(^)(void))decimal {
     return ^() {
         [self validateStringWithName:@"decimal" block:^NGRMsgKey *(NSString *string) {
             return [string ngr_isDecimal] ? nil : MSGNotDecimal;

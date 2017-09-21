@@ -43,7 +43,7 @@ extern NSUInteger const NGRPropertyValidatorDefaultPriority;
 /**
  *  Validates that the NSObject is nil or not.
  */
-@property (copy, nonatomic, readonly) NGRPropertyValidator *(^required)();
+@property (copy, nonatomic, readonly) NGRPropertyValidator *(^required)(void);
 
 /**
  *  Whether the validated property can be empty (means it's length or count is equal to 0). By default cannot be empty.
@@ -51,7 +51,7 @@ extern NSUInteger const NGRPropertyValidatorDefaultPriority;
  *
  *  Refers to NSString, NSAttributedString, NSData, NSArray, NSSet, NSDictionary (and their mutable counterparts).
  */
-@property (copy, nonatomic, readonly) NGRPropertyValidator *(^allowEmpty)();
+@property (copy, nonatomic, readonly) NGRPropertyValidator *(^allowEmpty)(void);
 
 /**
  *  Sets priority of property validator. During validation proccess, property validators will be invoke one by one ordered by priority.

@@ -61,7 +61,7 @@ typedef NGRMsgKey *(^NGRNumberValidationBlock)(NSNumber *number);
     };
 }
 
-- (NGRPropertyValidator *(^)())beFalse {
+- (NGRPropertyValidator *(^)(void))beFalse {
     return ^() {
         [self validateNumberWithName:@"false value" block:^NGRMsgKey *(NSNumber *number) {
             return [number boolValue] ? MSGNotFalse : nil;
@@ -70,7 +70,7 @@ typedef NGRMsgKey *(^NGRNumberValidationBlock)(NSNumber *number);
     };
 }
 
-- (NGRPropertyValidator *(^)())beTrue {
+- (NGRPropertyValidator *(^)(void))beTrue {
     return ^() {
         [self validateNumberWithName:@"true value" block:^NGRMsgKey *(NSNumber *number) {
             return [number boolValue] ? nil : MSGNotTrue;

@@ -91,7 +91,7 @@ NGRMsgKey *const NGRErrorUnexpectedClass = (NGRMsgKey *)@"NGRErrorUnexpectedClas
     };
 }
 
-- (NGRPropertyValidator *(^)())required {
+- (NGRPropertyValidator *(^)(void))required {
     return ^() {
         self.isRequired = YES;
         [self validateClass:nil withName:@"required" validationBlock:^NGRMsgKey *(id value) {
@@ -106,7 +106,7 @@ NGRMsgKey *const NGRErrorUnexpectedClass = (NGRMsgKey *)@"NGRErrorUnexpectedClas
     };
 }
 
-- (NGRPropertyValidator *(^)())allowEmpty {
+- (NGRPropertyValidator *(^)(void))allowEmpty {
     return ^() {
         self.allowEmptyProperty = YES;
         return self;

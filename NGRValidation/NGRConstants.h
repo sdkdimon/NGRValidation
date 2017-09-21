@@ -49,4 +49,4 @@ extern NGRMsgKey *const MSGNotIncludedIn;
 extern NGRMsgKey *const MSGNotExcludedFrom;
 
 typedef NGRMsgKey *(^NGRValidationBlock)(id);
-typedef NSArray *(^NGRRules)();
+typedef NSArray *(^NGRRules)(void);
