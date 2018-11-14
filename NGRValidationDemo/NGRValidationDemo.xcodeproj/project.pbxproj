@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		8AC8DAA41E438A4700985EDD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC8DAA31E438A4700985EDD /* main.m */; };
 		8AC8DAA71E438A4700985EDD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC8DAA61E438A4700985EDD /* AppDelegate.m */; };
-		8AC8DAAA1E438A4700985EDD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC8DAA91E438A4700985EDD /* ViewController.m */; };
-		8AC8DAAD1E438A4700985EDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AC8DAAB1E438A4700985EDD /* Main.storyboard */; };
 		8AC8DAAF1E438A4700985EDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AC8DAAE1E438A4700985EDD /* Assets.xcassets */; };
 		8AC8DAB21E438A4700985EDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AC8DAB01E438A4700985EDD /* LaunchScreen.storyboard */; };
 		8AC8DAD31E438AFF00985EDD /* NGRCalendarEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC8DABA1E438AFF00985EDD /* NGRCalendarEvent.m */; };
@@ -49,9 +47,6 @@
 		8AC8DAA31E438A4700985EDD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8AC8DAA51E438A4700985EDD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8AC8DAA61E438A4700985EDD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8AC8DAA81E438A4700985EDD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8AC8DAA91E438A4700985EDD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		8AC8DAAC1E438A4700985EDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8AC8DAAE1E438A4700985EDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8AC8DAB11E438A4700985EDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8AC8DAB31E438A4700985EDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -143,9 +138,6 @@
 				8AC8DAD21E438AFF00985EDD /* UIViewController+NGRDemo.m */,
 				8AC8DAA51E438A4700985EDD /* AppDelegate.h */,
 				8AC8DAA61E438A4700985EDD /* AppDelegate.m */,
-				8AC8DAA81E438A4700985EDD /* ViewController.h */,
-				8AC8DAA91E438A4700985EDD /* ViewController.m */,
-				8AC8DAAB1E438A4700985EDD /* Main.storyboard */,
 				8AC8DAAE1E438A4700985EDD /* Assets.xcassets */,
 				8AC8DAB01E438A4700985EDD /* LaunchScreen.storyboard */,
 				8AC8DAB31E438A4700985EDD /* Info.plist */,
@@ -198,7 +190,7 @@
 		8AC8DA971E438A4700985EDD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = dimon;
 				TargetAttributes = {
 					8AC8DA9E1E438A4700985EDD = {
@@ -233,7 +225,6 @@
 			files = (
 				8AC8DAB21E438A4700985EDD /* LaunchScreen.storyboard in Resources */,
 				8AC8DAAF1E438A4700985EDD /* Assets.xcassets in Resources */,
-				8AC8DAAD1E438A4700985EDD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,7 +237,6 @@
 			files = (
 				8AC8DAD31E438AFF00985EDD /* NGRCalendarEvent.m in Sources */,
 				8AC8DAD41E438AFF00985EDD /* NGRComplexDemoView.m in Sources */,
-				8AC8DAAA1E438A4700985EDD /* ViewController.m in Sources */,
 				8AC8DADD1E438AFF00985EDD /* NGRTextField.m in Sources */,
 				8AC8DAD61E438AFF00985EDD /* NGRDemoDatePickerCell.m in Sources */,
 				8AC8DADA1E438AFF00985EDD /* NGRMediumDemoViewController.m in Sources */,
@@ -266,14 +256,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8AC8DAAB1E438A4700985EDD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8AC8DAAC1E438A4700985EDD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8AC8DAB01E438A4700985EDD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -298,6 +280,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -305,6 +288,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -351,6 +335,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -358,6 +343,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

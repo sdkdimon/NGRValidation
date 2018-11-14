@@ -79,7 +79,7 @@ NGRMsgKey *const NGRErrorUnexpectedClass = (NGRMsgKey *)@"NGRErrorUnexpectedClas
 
 - (NGRPropertyValidator *(^)(NSUInteger))order {
     return ^(NSUInteger priority){
-        _priority = priority;
+        self->_priority = priority;
         return self;
     };
 }
