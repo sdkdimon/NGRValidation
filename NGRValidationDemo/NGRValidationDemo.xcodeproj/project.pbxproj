@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8AB7A450219D989B005B3EFC /* NGRValidation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AB7A44F219D989B005B3EFC /* NGRValidation.framework */; };
+		8AB7A451219D989B005B3EFC /* NGRValidation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8AB7A44F219D989B005B3EFC /* NGRValidation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8AC8DAA41E438A4700985EDD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC8DAA31E438A4700985EDD /* main.m */; };
 		8AC8DAA71E438A4700985EDD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC8DAA61E438A4700985EDD /* AppDelegate.m */; };
 		8AC8DAAF1E438A4700985EDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AC8DAAE1E438A4700985EDD /* Assets.xcassets */; };
@@ -24,18 +26,16 @@
 		8AC8DADD1E438AFF00985EDD /* NGRTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC8DACE1E438AFF00985EDD /* NGRTextField.m */; };
 		8AC8DADE1E438AFF00985EDD /* NGRUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC8DAD01E438AFF00985EDD /* NGRUser.m */; };
 		8AC8DADF1E438AFF00985EDD /* UIViewController+NGRDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC8DAD21E438AFF00985EDD /* UIViewController+NGRDemo.m */; };
-		8AC8DAE11E438B3300985EDD /* NGRValidation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC8DAE01E438B3300985EDD /* NGRValidation.framework */; };
-		8AC8DAE21E438B3300985EDD /* NGRValidation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC8DAE01E438B3300985EDD /* NGRValidation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		8AC8DAE31E438B3300985EDD /* Embed Frameworks */ = {
+		8AB7A452219D989B005B3EFC /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8AC8DAE21E438B3300985EDD /* NGRValidation.framework in Embed Frameworks */,
+				8AB7A451219D989B005B3EFC /* NGRValidation.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,6 +43,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8AB7A44F219D989B005B3EFC /* NGRValidation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NGRValidation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AC8DA9F1E438A4700985EDD /* NGRValidationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NGRValidationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AC8DAA31E438A4700985EDD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8AC8DAA51E438A4700985EDD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -76,7 +77,6 @@
 		8AC8DAD01E438AFF00985EDD /* NGRUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGRUser.m; sourceTree = "<group>"; };
 		8AC8DAD11E438AFF00985EDD /* UIViewController+NGRDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NGRDemo.h"; sourceTree = "<group>"; };
 		8AC8DAD21E438AFF00985EDD /* UIViewController+NGRDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NGRDemo.m"; sourceTree = "<group>"; };
-		8AC8DAE01E438B3300985EDD /* NGRValidation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NGRValidation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,17 +84,207 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AC8DAE11E438B3300985EDD /* NGRValidation.framework in Frameworks */,
+				8AB7A450219D989B005B3EFC /* NGRValidation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8AB7A427219C3E47005B3EFC /* Simple */ = {
+			isa = PBXGroup;
+			children = (
+				8AB7A455219D993A005B3EFC /* DemoView */,
+				8AC8DACB1E438AFF00985EDD /* NGRSimpleDemoViewController.h */,
+				8AC8DACC1E438AFF00985EDD /* NGRSimpleDemoViewController.m */,
+			);
+			path = Simple;
+			sourceTree = "<group>";
+		};
+		8AB7A429219C3EB5005B3EFC /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				8AC8DACD1E438AFF00985EDD /* NGRTextField.h */,
+				8AC8DACE1E438AFF00985EDD /* NGRTextField.m */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		8AB7A42B219C3FC0005B3EFC /* Complex */ = {
+			isa = PBXGroup;
+			children = (
+				8AB7A456219D9945005B3EFC /* DemoView */,
+				8AB7A454219D991F005B3EFC /* Cells */,
+				8AC8DABD1E438AFF00985EDD /* NGRComplexDemoViewController.h */,
+				8AC8DABE1E438AFF00985EDD /* NGRComplexDemoViewController.m */,
+			);
+			path = Complex;
+			sourceTree = "<group>";
+		};
+		8AB7A442219D96AF005B3EFC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8AB7A44A219D9744005B3EFC /* DataModel */,
+				8AB7A444219D96C3005B3EFC /* PresentationLayer */,
+				8AB7A443219D96B6005B3EFC /* ApplicationLayer */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8AB7A443219D96B6005B3EFC /* ApplicationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				8AC8DAA51E438A4700985EDD /* AppDelegate.h */,
+				8AC8DAA61E438A4700985EDD /* AppDelegate.m */,
+			);
+			path = ApplicationLayer;
+			sourceTree = "<group>";
+		};
+		8AB7A444219D96C3005B3EFC /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				8AB7A449219D9737005B3EFC /* Categories */,
+				8AB7A447219D96EC005B3EFC /* Views */,
+				8AB7A445219D96D7005B3EFC /* ViewControllers */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		8AB7A445219D96D7005B3EFC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8AB7A448219D970F005B3EFC /* Medium */,
+				8AB7A42B219C3FC0005B3EFC /* Complex */,
+				8AB7A427219C3E47005B3EFC /* Simple */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8AB7A447219D96EC005B3EFC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8AB7A429219C3EB5005B3EFC /* TextField */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8AB7A448219D970F005B3EFC /* Medium */ = {
+			isa = PBXGroup;
+			children = (
+				8AB7A457219D9950005B3EFC /* DemoView */,
+				8AC8DAC71E438AFF00985EDD /* NGRMediumDemoViewController.h */,
+				8AC8DAC81E438AFF00985EDD /* NGRMediumDemoViewController.m */,
+			);
+			path = Medium;
+			sourceTree = "<group>";
+		};
+		8AB7A449219D9737005B3EFC /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				8AC8DAD11E438AFF00985EDD /* UIViewController+NGRDemo.h */,
+				8AC8DAD21E438AFF00985EDD /* UIViewController+NGRDemo.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		8AB7A44A219D9744005B3EFC /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				8AB7A459219D9970005B3EFC /* User */,
+				8AB7A458219D9966005B3EFC /* CalendarEvent */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		8AB7A44C219D9758005B3EFC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8AC8DAAE1E438A4700985EDD /* Assets.xcassets */,
+				8AC8DAB01E438A4700985EDD /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8AB7A44E219D9784005B3EFC /* Supprting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8AC8DAB31E438A4700985EDD /* Info.plist */,
+				8AC8DAA31E438A4700985EDD /* main.m */,
+			);
+			path = "Supprting Files";
+			sourceTree = "<group>";
+		};
+		8AB7A453219D98BE005B3EFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8AB7A44F219D989B005B3EFC /* NGRValidation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8AB7A454219D991F005B3EFC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8AC8DABF1E438AFF00985EDD /* NGRDemoDatePickerCell.h */,
+				8AC8DAC01E438AFF00985EDD /* NGRDemoDatePickerCell.m */,
+				8AC8DAC11E438AFF00985EDD /* NGRDemoSwitchCell.h */,
+				8AC8DAC21E438AFF00985EDD /* NGRDemoSwitchCell.m */,
+				8AC8DAC31E438AFF00985EDD /* NGRDemoTextFieldCell.h */,
+				8AC8DAC41E438AFF00985EDD /* NGRDemoTextFieldCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		8AB7A455219D993A005B3EFC /* DemoView */ = {
+			isa = PBXGroup;
+			children = (
+				8AC8DAC91E438AFF00985EDD /* NGRSimpleDemoView.h */,
+				8AC8DACA1E438AFF00985EDD /* NGRSimpleDemoView.m */,
+			);
+			path = DemoView;
+			sourceTree = "<group>";
+		};
+		8AB7A456219D9945005B3EFC /* DemoView */ = {
+			isa = PBXGroup;
+			children = (
+				8AC8DABB1E438AFF00985EDD /* NGRComplexDemoView.h */,
+				8AC8DABC1E438AFF00985EDD /* NGRComplexDemoView.m */,
+			);
+			path = DemoView;
+			sourceTree = "<group>";
+		};
+		8AB7A457219D9950005B3EFC /* DemoView */ = {
+			isa = PBXGroup;
+			children = (
+				8AC8DAC51E438AFF00985EDD /* NGRMediumDemoView.h */,
+				8AC8DAC61E438AFF00985EDD /* NGRMediumDemoView.m */,
+			);
+			path = DemoView;
+			sourceTree = "<group>";
+		};
+		8AB7A458219D9966005B3EFC /* CalendarEvent */ = {
+			isa = PBXGroup;
+			children = (
+				8AC8DAB91E438AFF00985EDD /* NGRCalendarEvent.h */,
+				8AC8DABA1E438AFF00985EDD /* NGRCalendarEvent.m */,
+			);
+			path = CalendarEvent;
+			sourceTree = "<group>";
+		};
+		8AB7A459219D9970005B3EFC /* User */ = {
+			isa = PBXGroup;
+			children = (
+				8AC8DACF1E438AFF00985EDD /* NGRUser.h */,
+				8AC8DAD01E438AFF00985EDD /* NGRUser.m */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
 		8AC8DA961E438A4700985EDD = {
 			isa = PBXGroup;
 			children = (
 				8AC8DAA11E438A4700985EDD /* NGRValidationDemo */,
+				8AB7A453219D98BE005B3EFC /* Frameworks */,
 				8AC8DAA01E438A4700985EDD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -110,57 +300,11 @@
 		8AC8DAA11E438A4700985EDD /* NGRValidationDemo */ = {
 			isa = PBXGroup;
 			children = (
-				8AC8DAB91E438AFF00985EDD /* NGRCalendarEvent.h */,
-				8AC8DABA1E438AFF00985EDD /* NGRCalendarEvent.m */,
-				8AC8DABB1E438AFF00985EDD /* NGRComplexDemoView.h */,
-				8AC8DABC1E438AFF00985EDD /* NGRComplexDemoView.m */,
-				8AC8DABD1E438AFF00985EDD /* NGRComplexDemoViewController.h */,
-				8AC8DABE1E438AFF00985EDD /* NGRComplexDemoViewController.m */,
-				8AC8DABF1E438AFF00985EDD /* NGRDemoDatePickerCell.h */,
-				8AC8DAC01E438AFF00985EDD /* NGRDemoDatePickerCell.m */,
-				8AC8DAC11E438AFF00985EDD /* NGRDemoSwitchCell.h */,
-				8AC8DAC21E438AFF00985EDD /* NGRDemoSwitchCell.m */,
-				8AC8DAC31E438AFF00985EDD /* NGRDemoTextFieldCell.h */,
-				8AC8DAC41E438AFF00985EDD /* NGRDemoTextFieldCell.m */,
-				8AC8DAC51E438AFF00985EDD /* NGRMediumDemoView.h */,
-				8AC8DAC61E438AFF00985EDD /* NGRMediumDemoView.m */,
-				8AC8DAC71E438AFF00985EDD /* NGRMediumDemoViewController.h */,
-				8AC8DAC81E438AFF00985EDD /* NGRMediumDemoViewController.m */,
-				8AC8DAC91E438AFF00985EDD /* NGRSimpleDemoView.h */,
-				8AC8DACA1E438AFF00985EDD /* NGRSimpleDemoView.m */,
-				8AC8DACB1E438AFF00985EDD /* NGRSimpleDemoViewController.h */,
-				8AC8DACC1E438AFF00985EDD /* NGRSimpleDemoViewController.m */,
-				8AC8DACD1E438AFF00985EDD /* NGRTextField.h */,
-				8AC8DACE1E438AFF00985EDD /* NGRTextField.m */,
-				8AC8DACF1E438AFF00985EDD /* NGRUser.h */,
-				8AC8DAD01E438AFF00985EDD /* NGRUser.m */,
-				8AC8DAD11E438AFF00985EDD /* UIViewController+NGRDemo.h */,
-				8AC8DAD21E438AFF00985EDD /* UIViewController+NGRDemo.m */,
-				8AC8DAA51E438A4700985EDD /* AppDelegate.h */,
-				8AC8DAA61E438A4700985EDD /* AppDelegate.m */,
-				8AC8DAAE1E438A4700985EDD /* Assets.xcassets */,
-				8AC8DAB01E438A4700985EDD /* LaunchScreen.storyboard */,
-				8AC8DAB31E438A4700985EDD /* Info.plist */,
-				8AC8DAE41E438BE300985EDD /* Frameworks */,
-				8AC8DAA21E438A4700985EDD /* Supporting Files */,
+				8AB7A442219D96AF005B3EFC /* Classes */,
+				8AB7A44C219D9758005B3EFC /* Resources */,
+				8AB7A44E219D9784005B3EFC /* Supprting Files */,
 			);
 			path = NGRValidationDemo;
-			sourceTree = "<group>";
-		};
-		8AC8DAA21E438A4700985EDD /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				8AC8DAA31E438A4700985EDD /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		8AC8DAE41E438BE300985EDD /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				8AC8DAE01E438B3300985EDD /* NGRValidation.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,7 +317,7 @@
 				8AC8DA9B1E438A4700985EDD /* Sources */,
 				8AC8DA9C1E438A4700985EDD /* Frameworks */,
 				8AC8DA9D1E438A4700985EDD /* Resources */,
-				8AC8DAE31E438B3300985EDD /* Embed Frameworks */,
+				8AB7A452219D989B005B3EFC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -374,9 +518,8 @@
 		8AC8DAB71E438A4700985EDD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N7KJYZ955Q;
-				INFOPLIST_FILE = NGRValidationDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/NGRValidationDemo/Supprting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.sdkdimon.NGRValidationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -386,9 +529,8 @@
 		8AC8DAB81E438A4700985EDD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N7KJYZ955Q;
-				INFOPLIST_FILE = NGRValidationDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/NGRValidationDemo/Supprting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.sdkdimon.NGRValidationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

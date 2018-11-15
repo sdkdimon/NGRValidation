@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+#import <NGRValidation/NGRPropertyValidator.h>
+
 @interface NGRTextField : UITextField
+
+@property (strong, nonatomic, readwrite) NGRPropertyValidator *textValidator;
 
 @end
