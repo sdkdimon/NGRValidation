@@ -12,7 +12,7 @@ SharedExamplesBegin(NGRValidatorBehavior)
 
 sharedExamplesFor(NGRMultiplePropertiesBehavior, ^(NSDictionary *data) {
     
-    __block NSArray *(^rules)(); __block BOOL success; __block NGRTestModel *model;
+    __block NSArray *(^rules)(void); __block BOOL success; __block NGRTestModel *model;
     
     beforeEach(^{
         model = data[@"model"];
@@ -55,7 +55,7 @@ sharedExamplesFor(NGRMultiplePropertiesBehavior, ^(NSDictionary *data) {
 sharedExamplesFor(NGRValueBehavior, ^(NSDictionary *data) {
     
     __block NSError *error; __block NSArray *array; __block BOOL success;
-    __block NGRTestModel *model; __block NSArray *(^rules)(); __block NGRPropertyValidator *propertyValidator;
+    __block NGRTestModel *model; __block NSArray *(^rules)(void); __block NGRPropertyValidator *propertyValidator;
     
     beforeEach(^{
         model = [[NGRTestModel alloc] init];
@@ -136,7 +136,7 @@ sharedExamplesFor(NGRValueBehavior, ^(NSDictionary *data) {
 sharedExamplesFor(NGRScenarioSuccessBehavior, ^(NSDictionary *data) {
     
     __block NSError *error; __block NSArray *array; __block BOOL success;
-    __block NGRTestModel *model; __block NSArray *(^rules)(); __block NGRPropertyValidator *propertyValidator;
+    __block NGRTestModel *model; __block NSArray *(^rules)(void); __block NGRPropertyValidator *propertyValidator;
     __block NSString *scenario;
     
     beforeEach(^{
@@ -174,7 +174,7 @@ sharedExamplesFor(NGRScenarioSuccessBehavior, ^(NSDictionary *data) {
 sharedExamplesFor(NGRScenarioFailureBehavior, ^(NSDictionary *data) {
     
     __block NSError *error; __block NSArray *array; __block BOOL success;
-    __block NGRTestModel *model; __block NSArray *(^rules)(); __block NGRPropertyValidator *propertyValidator;
+    __block NGRTestModel *model; __block NSArray *(^rules)(void); __block NGRPropertyValidator *propertyValidator;
     __block NSString *scenario;
     
     beforeEach(^{
@@ -216,7 +216,7 @@ sharedExamplesFor(NGRScenarioFailureBehavior, ^(NSDictionary *data) {
 
 sharedExamplesFor(NGRAssertBehavior, ^(NSDictionary *data) {
     
-    __block NSError *error; __block NSArray *(^rules)();
+    __block NSError *error; __block NSArray *(^rules)(void);
     __block NGRTestModel *model; __block NGRPropertyValidator *propertyValidator;
     
     beforeEach(^{

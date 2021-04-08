@@ -6,6 +6,7 @@
 //
 //
 
+#import <NGRValidation/NGRValidation.h>
 
 // data keys:
 NSString *const NGRValidatorKey = @"NGRValidatorKey";

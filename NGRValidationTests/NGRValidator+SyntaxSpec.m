@@ -6,6 +6,8 @@
 //
 //
 
+#import <NGRValidation/NGRValidation.h>
+
 SpecBegin(NGRValidator_Syntax)
 
 describe(@"Syntax validation", ^{

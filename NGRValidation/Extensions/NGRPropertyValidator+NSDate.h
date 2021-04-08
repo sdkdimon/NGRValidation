@@ -6,7 +6,7 @@
 //
 //
 
-#import "NGRPropertyValidator.h"
+#import <NGRValidation/NGRPropertyValidator.h>
 
 @interface NGRPropertyValidator (NSDate)
 

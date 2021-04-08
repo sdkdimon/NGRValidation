@@ -6,7 +6,7 @@
 //
 //
 
-#import "NGRPropertyValidator.h"
+#import <NGRValidation/NGRPropertyValidator.h>
 
 #if TARGET_OS_IPHONE
 #import <UIKit/UIKit.h>

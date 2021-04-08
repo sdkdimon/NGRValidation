@@ -6,6 +6,8 @@
 //
 //
 
+#import <NGRValidation/NGRValidation.h>
+
 SpecBegin(NGRValidator_NSNumber)
 
 describe(@"NSNumber validation", ^{

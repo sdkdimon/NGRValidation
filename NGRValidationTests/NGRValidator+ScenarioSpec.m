@@ -6,6 +6,8 @@
 //
 //
 
+#import <NGRValidation/NGRValidation.h>
+
 static NSString *const NGRFirstScenario = @"Fixture 1st Scenario";
 static NSString *const NGRSecondScenario = @"Fixture 2nd Scenario";
 

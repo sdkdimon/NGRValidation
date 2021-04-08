@@ -6,6 +6,8 @@
 //
 //
 
+#import <NGRValidation/NGRValidation.h>
+
 SpecBegin(NGRPropertyValidator)
 
 describe(@"NGRPropertyValidator", ^{

@@ -6,6 +6,9 @@
 //
 //
 
+#import <NGRValidation/NGRValidation.h>
+#import <Expecta/Expecta.h>
+
 SpecBegin(NGRValidator)
 
 describe(@"NGRValidator", ^{

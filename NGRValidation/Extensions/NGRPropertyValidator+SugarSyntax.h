@@ -6,7 +6,7 @@
 //
 //
 
-#import "NGRPropertyValidator.h"
+#import <NGRValidation/NGRPropertyValidator.h>
 
 /**
  *  All properties in this class are syntactic sugar and can be safely omitted.

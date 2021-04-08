@@ -6,7 +6,7 @@
 //
 //
 
-#import "NGRPropertyValidator.h"
+#import <NGRValidation/NGRPropertyValidator.h>
 
 typedef NS_ENUM(NSInteger, NGRSyntax) {
     NGRSyntaxEmail, // validates email syntax.

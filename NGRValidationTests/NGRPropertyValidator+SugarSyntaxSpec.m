@@ -6,6 +6,8 @@
 //
 //
 
+#import <NGRValidation/NGRValidation.h>
+
 SpecBegin(NGRPropertyValidator_SugarSyntax)
 
 describe(@"Sugar syntax", ^{

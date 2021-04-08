@@ -6,6 +6,8 @@
 //
 //
 
+#import <NGRValidation/NGRValidation.h>
+
 SpecBegin(NGRValidator_NSDate)
 
 describe(@"NSDate validation", ^{

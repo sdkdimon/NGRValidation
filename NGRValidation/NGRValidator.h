@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NGRPropertyValidator.h"
-#import "NGRValidatorDeprecated.h"
+#import <NGRValidation/NGRPropertyValidator.h>
+#import <NGRValidation/NGRValidatorDeprecated.h>
 
 
 @interface NGRValidator : NSObject

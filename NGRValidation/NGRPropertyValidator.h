@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-#import "NGRMessaging.h"
-#import "NGRMessages.h"
-#import "NGRConstants.h"
+#import <NGRValidation/NGRMessaging.h>
+#import <NGRValidation/NGRMessages.h>
+#import <NGRValidation/NGRConstants.h>
 
 extern NSUInteger const NGRPropertyValidatorDefaultPriority;
 

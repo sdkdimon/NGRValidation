@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NGRConstants.h"
+#import <NGRValidation/NGRConstants.h>
 
 @interface NGRValidationRule : NSObject
 
