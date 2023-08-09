@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import <NGRValidation/NGRPropertyValidator.h>
-#import <NGRValidation/NGRValidatorDeprecated.h>
 
+NS_ASSUME_NONNULL_BEGIN
 
 @interface NGRValidator : NSObject
 
@@ -22,7 +22,7 @@
  *
  *  @return an error if validation will not pass. Otherwise nil.
  */
-+ (NSError *)validateValue:(NSObject *)value named:(NSString *)name rules:(void (^)(NGRPropertyValidator *validator))rules;
++ (nullable NSError *)validateValue:(NSObject *)value named:(NSString *)name rules:(void (^)(NGRPropertyValidator *validator))rules;
 
 /**
  *  Validates model with given rules. Returns YES when validation succeeded, NO otherwise.
@@ -47,7 +47,7 @@
  *
  *  @return result of validation. YES if validation will pass, NO otherwise.
  */
-+ (BOOL)validateModel:(NSObject *)model error:(NSError **)error scenario:(NSString *)scenario delegate:(id<NGRMessaging>)delegate rules:(NGRRules)rules;
++ (BOOL)validateModel:(NSObject *)model error:(NSError **)error scenario:(nullable NSString *)scenario delegate:(id<NGRMessaging>)delegate rules:(NGRRules)rules;
 
 /**
  *  Validates model with given rules. Returns empty array when validation succeeded. If not, array will contains errors.
@@ -58,7 +58,7 @@
  *
  *  @return Nil if validation will pass, otherwise an array populated with validation errors.
  */
-+ (NSArray *)validateModel:(NSObject *)model delegate:(id<NGRMessaging>)delegate rules:(NGRRules)rules;
++ (nullable NSArray *)validateModel:(NSObject *)model delegate:(id<NGRMessaging>)delegate rules:(NGRRules)rules;
 
 /**
  *  Validates model with given rules and scenario. Returns empty array when validation succeeded. If not, array will contains errors.
@@ -70,20 +70,8 @@
  *
  *  @return Nil if validation will pass, otherwise an array populated with validation errors.
  */
-+ (NSArray *)validateModel:(NSObject *)model scenario:(NSString *)scenario delegate:(id<NGRMessaging>)delegate rules:(NGRRules)rules;
++ (nullable NSArray *)validateModel:(NSObject *)model scenario:(nullable NSString *)scenario delegate:(id<NGRMessaging>)delegate rules:(NGRRules)rules;
 
 @end
 
-@interface NGRValidator (Deprecated)
-
-+ (NSError *)validateValue:(NSObject *)value named:(NSString *)name usingRules:(void (^)(NGRPropertyValidator *validator))rules NGR_DEPRECATED_USE_INSTEAD("validateValue:named:rules");
-
-+ (BOOL)validateModel:(NSObject *)model error:(NSError **)error usingRules:(NSArray *(^)(void))rules NGR_DEPRECATED_USE_INSTEAD("validateModel:error:delegate:rules:");
-
-+ (BOOL)validateModel:(NSObject *)model error:(NSError **)error scenario:(NSString *)scenario usingRules:(NSArray *(^)(void))rules NGR_DEPRECATED_USE_INSTEAD("validateModel:error:scenario:delegate:rules:");
-
-+ (NSArray *)validateModel:(NSObject *)model usingRules:(NSArray *(^)(void))rules NGR_DEPRECATED_USE_INSTEAD("validateModel:delegate:rules:");
-
-+ (NSArray *)validateModel:(NSObject *)model scenario:(NSString *)scenario usingRules:(NSArray *(^)(void))rules NGR_DEPRECATED_USE_INSTEAD("validateModel:scenario:delegate:rules:");
-
-@end
+NS_ASSUME_NONNULL_END

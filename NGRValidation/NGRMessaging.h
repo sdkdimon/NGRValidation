@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+@class NGRMsgKey;
+
+NS_ASSUME_NONNULL_BEGIN
+
 @protocol NGRMessaging <NSObject>
 
 @required
@@ -27,6 +31,8 @@
  *       property name
  *
  */
-- (NSDictionary *)validationErrorMessagesByPropertyKey;
+- (NSDictionary<NSString*, NSDictionary<NGRMsgKey*,NSString*>*> *)validationErrorMessagesByPropertyKey;
 
 @end
+
+NS_ASSUME_NONNULL_END

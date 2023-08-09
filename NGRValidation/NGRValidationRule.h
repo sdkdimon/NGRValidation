@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <NGRValidation/NGRConstants.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface NGRValidationRule : NSObject
 
 /**
@@ -33,3 +35,5 @@
 @property (copy, readonly, nonatomic) NGRValidationBlock validationBlock;
 
 @end
+
+NS_ASSUME_NONNULL_END

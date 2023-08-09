@@ -8,6 +8,8 @@
 
 #import <NGRValidation/NGRPropertyValidator.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 /**
  *  All properties in this class are syntactic sugar and can be safely omitted.
  *  They improve readability and introduce natural speech to code.
@@ -45,3 +47,5 @@
 @property (nonatomic, strong, readonly) NGRPropertyValidator *should;
 
 @end
+
+NS_ASSUME_NONNULL_END

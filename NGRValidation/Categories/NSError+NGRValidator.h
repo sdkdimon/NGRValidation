@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 extern NSString * const NGRValidatorDomain;
 
 extern NSString * const NGRValidatorPropertyNameKey;
@@ -17,3 +19,5 @@ extern NSString * const NGRValidatorPropertyNameKey;
 + (instancetype)ngr_errorWithDescription:(NSString *)description propertyName:(NSString *)propertyName;
 
 @end
+
+NS_ASSUME_NONNULL_END

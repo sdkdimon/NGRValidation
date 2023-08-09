@@ -8,12 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface NSObject (NGRRuntime)
 
-- (NSArray *)ngr_propertiesOfClass:(Class)aClass;
+- (NSArray<NSString*> *)ngr_propertiesOfClass:(Class)aClass;
 
-- (NSArray *)ngr_properties;
+- (NSArray<NSString*> *)ngr_properties;
 
 - (Class)ngr_classOfPropertyNamed:(NSString *)propertyName;
 
 @end
+
+NS_ASSUME_NONNULL_END

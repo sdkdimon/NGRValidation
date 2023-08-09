@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+@class NGRPropertyValidator;
+
+NS_ASSUME_NONNULL_BEGIN
+
 @interface NGRMsgKey : NSString @end
 
 //NGRPropertyValidator + NSObject
@@ -48,5 +52,7 @@ extern NGRMsgKey *const MSGNotExcludes;
 extern NGRMsgKey *const MSGNotIncludedIn;
 extern NGRMsgKey *const MSGNotExcludedFrom;
 
-typedef NGRMsgKey *(^NGRValidationBlock)(id);
-typedef NSArray *(^NGRRules)(void);
+typedef NGRMsgKey *_Nullable(^NGRValidationBlock)(id);
+typedef NSArray<NGRPropertyValidator*> *_Nonnull(^NGRRules)(void);
+
+NS_ASSUME_NONNULL_END

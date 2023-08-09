@@ -109,27 +109,3 @@
 }
 
 @end
-
-@implementation NGRValidator (Deprecated)
-
-+ (NSError *)validateValue:(NSObject *)value named:(NSString *)name usingRules:(void (^)(NGRPropertyValidator *validator))rules {
-    return [self validateValue:value named:name rules:rules];
-}
-
-+ (BOOL)validateModel:(NSObject *)model error:(NSError **)error usingRules:(NSArray *(^)(void))rules {
-    return [self validateModel:model error:error delegate:nil rules:rules];
-}
-
-+ (BOOL)validateModel:(NSObject *)model error:(NSError **)error scenario:(NSString *)scenario usingRules:(NSArray *(^)(void))rules {
-    return [self validateModel:model error:error scenario:scenario delegate:nil rules:rules];
-}
-
-+ (NSArray *)validateModel:(NSObject *)model usingRules:(NSArray *(^)(void))rules {
-    return [self validateModel:model delegate:nil rules:rules];
-}
-
-+ (NSArray *)validateModel:(NSObject *)model scenario:(NSString *)scenario usingRules:(NSArray *(^)(void))rules {
-    return [self validateModel:model scenario:scenario delegate:nil rules:rules];
-}
-
-@end

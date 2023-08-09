@@ -2,7 +2,7 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
 # Initial configuration
-platform :ios, '9.0'
+platform :ios, '12.0'
 use_frameworks!
 
 target 'NGRValidationTests' do

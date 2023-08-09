@@ -10,6 +10,8 @@
 
 @class NGRMsgKey;
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface NGRMessages : NSObject
 
 /**
@@ -29,3 +31,5 @@
 - (NSString *)messageForKey:(NGRMsgKey *)key;
 
 @end
+
+NS_ASSUME_NONNULL_END

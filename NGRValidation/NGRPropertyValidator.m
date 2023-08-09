@@ -7,7 +7,6 @@
 //
 
 #import "NGRPropertyValidator.h"
-#import "NGRValidationRule.h"
 
 #import "NSObject+NGRValidator.h"
 #import "NSArray+NGRValidator.h"
@@ -70,7 +69,7 @@ NGRMsgKey *const NGRErrorUnexpectedClass = (NGRMsgKey *)@"NGRErrorUnexpectedClas
     }];
 }
 
-- (NGRPropertyValidator *(^)(NSArray *))onScenarios {
+- (NGRPropertyValidator *(^)(NSArray<NSString*> *))onScenarios {
     return ^(NSArray *scenarios){
         self.scenarios = [scenarios mutableCopy];
         return self;
