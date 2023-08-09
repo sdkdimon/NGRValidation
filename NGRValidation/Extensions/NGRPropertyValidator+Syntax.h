@@ -8,6 +8,8 @@
 
 #import <NGRValidation/NGRPropertyValidator.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 typedef NS_ENUM(NSInteger, NGRSyntax) {
     NGRSyntaxEmail, // validates email syntax.
     NGRSyntaxName, // validates if given string contains only alphabetic signs.
@@ -41,3 +43,5 @@ typedef NS_ENUM(NSInteger, NGRSyntax) {
 @property (copy, nonatomic, readonly) NGRPropertyValidator *(^msgWrongRegex)(NSString *message);
 
 @end
+
+NS_ASSUME_NONNULL_END

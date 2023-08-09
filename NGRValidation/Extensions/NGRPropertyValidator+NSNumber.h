@@ -14,6 +14,8 @@
 #import <AppKit/AppKit.h>
 #endif
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface NGRPropertyValidator (NSNumber)
 
 #pragma mark - Rules
@@ -76,3 +78,5 @@
 @property (copy, nonatomic, readonly) NGRPropertyValidator *(^msgNotTrue)(NSString *message);
 
 @end
+
+NS_ASSUME_NONNULL_END

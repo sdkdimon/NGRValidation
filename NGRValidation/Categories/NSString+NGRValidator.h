@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface NSString (NGRValidator)
 
 - (BOOL)ngr_isEmail;
@@ -21,3 +23,5 @@
 - (NSString *)ngr_stringByCapitalizeFirstLetter;
 
 @end
+
+NS_ASSUME_NONNULL_END

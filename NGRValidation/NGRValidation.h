@@ -44,6 +44,5 @@ FOUNDATION_EXPORT const unsigned char NGRValidationVersionString[];
 #import <NGRValidation/NGRConstants.h>
 
 //headers:
-#import <NGRValidation/NGRValidatorDeprecated.h>
 #import <NGRValidation/NGRValidatorShorthand.h>
 

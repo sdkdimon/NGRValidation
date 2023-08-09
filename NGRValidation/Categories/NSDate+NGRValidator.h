@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface NSDate (NGRValidator)
 
 - (BOOL)ngr_isBetweenFirstDate:(NSDate *)firstDate lastDate:(NSDate *)lastDate inclusive:(BOOL)inclusive;
@@ -21,3 +23,5 @@
 - (BOOL)ngr_isEarlierThan:(NSDate *)date;
 
 @end
+
+NS_ASSUME_NONNULL_END

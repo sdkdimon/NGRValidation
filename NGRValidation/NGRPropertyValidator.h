@@ -11,6 +11,9 @@
 #import <NGRValidation/NGRMessaging.h>
 #import <NGRValidation/NGRMessages.h>
 #import <NGRValidation/NGRConstants.h>
+#import <NGRValidation/NGRValidationRule.h>
+
+NS_ASSUME_NONNULL_BEGIN
 
 extern NSUInteger const NGRPropertyValidatorDefaultPriority;
 
@@ -33,7 +36,7 @@ extern NSUInteger const NGRPropertyValidatorDefaultPriority;
 /**
  * The delegate that responds to NGRMessaging protocol methods.
  */
-@property (weak, nonatomic) id<NGRMessaging> delegate;
+@property (weak, nonatomic, nullable) id<NGRMessaging> delegate;
 
 /**
  * Localized name of validated property. Used in error description if has been set. (default: nil).
@@ -63,12 +66,12 @@ extern NSUInteger const NGRPropertyValidatorDefaultPriority;
  *  Sets scenarios which property validator has to conform. Do not use if property should be validate in every scenario.
  *  Remember to pass scenario names as NSStrings.
  */
-@property (copy, nonatomic, readonly) NGRPropertyValidator *(^onScenarios)(NSArray *scenarios);
+@property (copy, nonatomic, readonly) NGRPropertyValidator *(^onScenarios)(NSArray<NSString*> *scenarios);
 
 /**
  *  A scenarios which property validator conforms. If nil, property validator will be valid in every scenario.
  */
-@property (strong, nonatomic, readonly) NSMutableArray *scenarios;
+@property (strong, nonatomic, readonly) NSMutableArray<NSString*> *scenarios;
 
 /**
  *  Scenario used during validation process.
@@ -83,7 +86,7 @@ extern NSUInteger const NGRPropertyValidatorDefaultPriority;
 /**
  *  Array of NGRValidationRule objects, invoked one by one in validation process.
  */
-@property (strong, nonatomic, readonly) NSMutableArray *validationRules;
+@property (strong, nonatomic, readonly) NSMutableArray<NGRValidationRule*> *validationRules;
 
 /**
  *  Validation error messages handler.
@@ -96,7 +99,7 @@ extern NSUInteger const NGRPropertyValidatorDefaultPriority;
  *  @param value The value of validated property.
  *  @return NSError The error if any, otherwise nil.
  */
-- (NSError *)simpleValidationOfValue:(id)value;
+- (nullable NSError *)simpleValidationOfValue:(id)value;
 
 /**
  *  Validates property and gather all possible errors.
@@ -104,7 +107,7 @@ extern NSUInteger const NGRPropertyValidatorDefaultPriority;
  *  @param value The value of validated property.
  *  @return An NSArray of errors if any, otherwise nil.
  */
-- (NSArray *)complexValidationOfValue:(id)value;
+- (nullable NSArray *)complexValidationOfValue:(id)value;
 
 /**
  *  Adds a validator block to validators. Also checks if validated property is kind of given class.
@@ -113,6 +116,8 @@ extern NSUInteger const NGRPropertyValidatorDefaultPriority;
  *  @param name             The name of validator block.
  *  @param block            The validation block invoked during validation process.
  */
-- (void)validateClass:(Class)aClass withName:(NSString *)name validationBlock:(NGRValidationBlock)block;
+- (void)validateClass:(nullable Class)aClass withName:(NSString *)name validationBlock:(NGRValidationBlock)block;
 
 @end
+
+NS_ASSUME_NONNULL_END

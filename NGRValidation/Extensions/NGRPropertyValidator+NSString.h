@@ -8,6 +8,8 @@
 
 #import <NGRValidation/NGRPropertyValidator.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface NGRPropertyValidator (NSString)
 
 #pragma mark - Rules
@@ -80,3 +82,5 @@
 @property (copy, nonatomic, readonly) NGRPropertyValidator *(^msgNotDecimal)(NSString *message);
 
 @end
+
+NS_ASSUME_NONNULL_END
